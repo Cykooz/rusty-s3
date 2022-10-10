@@ -9,7 +9,7 @@ jobs:
     steps:
 
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3.1.0
 
     - name: Install Rust
       run: |
@@ -25,7 +25,7 @@ jobs:
     steps:
 
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3.1.0
 
     - name: Install Rust
       run: |
@@ -45,7 +45,7 @@ jobs:
     steps:
 
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3.1.0
 
     - name: Install and run minio
       if: matrix.platform == 'ubuntu-20.04'
@@ -70,7 +70,7 @@ jobs:
     steps:
 
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3.1.0
 
     - name: Install Rust
       run: rustup default 1.52.1
@@ -89,7 +89,7 @@ jobs:
     steps:
 
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3.1.0
 
     - name: Install cargo-tarpaulin
       run: |
